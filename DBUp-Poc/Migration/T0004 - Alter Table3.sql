@@ -1,0 +1,1 @@
+﻿ALTER TABLE Table3 ADD Test INT

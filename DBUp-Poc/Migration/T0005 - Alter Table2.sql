@@ -1,0 +1,1 @@
+﻿ALTER TABLE Table2 ADD Col1 INT

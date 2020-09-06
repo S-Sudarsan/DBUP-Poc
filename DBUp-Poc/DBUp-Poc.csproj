@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DBUp_Poc</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CompiledScripts\5 - Proc5.sql" />
+    <None Remove="CompiledScripts\6 - Proc6.sql" />
+    <None Remove="CompiledScripts\7 - Proc7.sql" />
+    <None Remove="CompiledScripts\8 - Proc8.sql" />
+    <None Remove="CompiledScripts\9 - Proc9.sql" />
+    <None Remove="CompiledScripts\S0001 - Proc1.sql" />
+    <None Remove="CompiledScripts\S0002 - Proc2.sql" />
+    <None Remove="CompiledScripts\S0003 - Proc3.sql" />
+    <None Remove="CompiledScripts\S0004 - Proc4.sql" />
+    <None Remove="CompiledScripts\S0005 - Proc5.sql" />
+    <None Remove="CompiledScripts\S0006 - Proc6.sql" />
+    <None Remove="CompiledScripts\S0007 - Proc7.sql" />
+    <None Remove="CompiledScripts\S0008 - Proc8.sql" />
+    <None Remove="CompiledScripts\S0009 - Proc9.sql" />
+    <None Remove="CompiledScripts\S0010 - Proc10.sql" />
+    <None Remove="CompiledScripts\S0011 - Proc11.sql" />
+    <None Remove="Migration\T0001 - Create Table1.sql" />
+    <None Remove="Migration\T0002 - Create Table2.sql" />
+    <None Remove="Migration\T0003 - Create Table3.sql" />
+    <None Remove="Migration\T0004 - Alter Table3.sql" />
+    <None Remove="Migration\T0005 - Alter Table2.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CompiledScripts\S0001 - Proc1.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0005 - Proc5.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0006 - Proc6.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0007 - Proc7.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0008 - Proc8.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0009 - Proc9.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0010 - Proc10.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0002 - Proc2.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0003 - Proc3.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0004 - Proc4.sql" />
+    <EmbeddedResource Include="CompiledScripts\S0011 - Proc11.sql" />
+    <EmbeddedResource Include="Migration\T0001 - Create Table1.sql" />
+    <EmbeddedResource Include="Migration\T0002 - Create Table2.sql" />
+    <EmbeddedResource Include="Migration\T0003 - Create Table3.sql" />
+    <EmbeddedResource Include="Migration\T0004 - Alter Table3.sql" />
+    <EmbeddedResource Include="Migration\T0005 - Alter Table2.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup-sqlserver" Version="4.4.0" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
